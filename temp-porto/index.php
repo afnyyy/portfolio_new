@@ -124,7 +124,11 @@ $rowsTest = mysqli_fetch_all($testimoni, MYSQLI_ASSOC);
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
+<<<<<<< HEAD
       <img src="assets/img/header.jpeg" alt="" data-aos="fade-in" class="">
+=======
+      <img src="<?php echo "../assets/uploads/". $rowHome['foto']?>" alt="" data-aos="fade-in" class="">
+>>>>>>> 8bd6f88 (ubah header home)
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2><?= $rowHome['nama'] ?></h2>
