@@ -352,7 +352,7 @@ $rowsTest = mysqli_fetch_all($testimoni, MYSQLI_ASSOC);
                 <div class="portfolio-info">
                   <h4><?php echo $list ['nama_porto'] ?></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="<?php echo "../assets/uploads/" . $list['foto']?>" title="<?php echo $list ['nama_porto'] ?>" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="<?php echo $list ['link_porto'] ?>" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
